@@ -4,7 +4,8 @@
 #include <arpa/inet.h>
 #include <unistd.h>
 
-#define PORT 8080  // порт, будет подключаться клиент
+#define PORT 8080  
+// порт, будет подключаться клиент
 
 int main(int argc, char const *argv[]) {
     int sock = 0;
