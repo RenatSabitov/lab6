@@ -86,8 +86,10 @@ int main() {
                 break;
             } else if (guess < number_to_guess) {
                 send(new_socket, "Загаданное число больше", strlen("Загаданное число больше"), 0);  // загаданное число больше
+                log_message(client_ip, "Клиент не угадал, число больше");
             } else {
                 send(new_socket, "Загаданное число меньше", strlen("Загаданное число меньше"), 0);  // загаданное число меньше
+                log_message(client_ip, "Клиент не угадал, число меньше");
             }
         }
 
