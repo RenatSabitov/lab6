@@ -52,7 +52,7 @@ int main(int argc, char const *argv[]) {
 
         // получение ответа от сервера
         memset(buffer, 0, sizeof(buffer));
-        int valread = read(sock, buffer, sizeof(buffer));
+        int valread = recv(sock, buffer, sizeof(buffer), 0);
         printf("Сервер: %s\n", buffer);
 
         // проверка, угадано ли число
