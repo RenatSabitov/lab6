@@ -5,8 +5,10 @@
 #include <unistd.h>
 #include <time.h>
 
-#define PORT 8080       // порт, на котором будет работать сервер
-#define MAX_CONN 5      // макс количество подключений в очереди
+#define PORT 8080
+// порт, на котором будет работать сервер
+#define MAX_CONN 5  
+ // макс количество подключений в очереди
 
 // Функция для логов сообщений от клиента
 void log_message(const char* client_ip, const char* message) {
